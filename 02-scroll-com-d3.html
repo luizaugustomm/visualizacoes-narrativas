@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Lab - Visualizações narrativas</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style media="screen">
+    #secoes {
+        position: relative;
+        display: inline-block;
+        width: 250px;
+        top: 0px;
+        z-index: 90;
+    }
+
+    #secoes .titulo {
+      font-family: Arial,Helvetica,"san-serif";
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 2px;
+      color: #262626;
+      line-height: 1.2em;
+    }
+
+    .passo {
+        margin-bottom: 200px;
+    }
+
+    #vis {
+        display: inline-block;
+        position: fixed;
+        top: 60px;
+        z-index: 1;
+        margin-left: 0;
+
+        height: 600px;
+        width: 600px;
+        background-color: #ddd;
+    }
+  </style>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div id='grafico'>
+    <div id='secoes'>
+      <section class="passo">
+        <div class="titulo">Nosso primeiro passo</div>
+        Aqui começamos nossa narrativa. Essa é uma seção da classe 'passo'.
+      </section>
+      <section class="passo">
+        <!-- Outro passo -->
+      </section>
+    </div>
+    <div id='vis'>
+    </div>
+    <div id="extra-space">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <script src="js/scroller.js"></script>
+<script src="js/sections.js"></script> -->
+</body>
+</html>
